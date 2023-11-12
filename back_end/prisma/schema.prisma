@@ -1,0 +1,353 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Aave {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("aave")
+}
+
+model BinanceCoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("binancecoin")
+}
+
+model Bitcoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("bitcoin")
+}
+
+model Cardano {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("cardano")
+}
+
+model ChainLink {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("chainlink")
+}
+
+model Cosmos {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("cosmos")
+}
+
+model CryptocomCoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("cryptocomcoin")
+}
+
+model Dogecoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("dogecoin")
+}
+
+model EOS {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("eos")
+}
+
+model Ethereum {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("ethereum")
+}
+
+model Iota {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("iota")
+}
+
+model Litecoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("litecoin")
+}
+
+model Monero {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("monero")
+}
+
+model NEM {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("nem")
+}
+
+model Polkadot {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("polkadot")
+}
+
+model Solana {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("solana")
+}
+
+model Stellar {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("stellar")
+}
+
+model Tether {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("tether")
+}
+
+model Tron {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("tron")
+}
+
+model USDCoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("usdcoin")
+}
+
+model Uniswap {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("uniswap")
+}
+
+model WrappedBitcoin {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("wrappedbitcoin")
+}
+
+model XRP {
+  sNo       Int      @id @default(autoincrement())
+  name      String
+  symbol    String
+  date      DateTime
+  high      Float
+  low       Float
+  open      Float
+  close     Float
+  volume    Float
+  marketCap Float    @map("market_cap")
+
+  @@map("xrp")
+}
