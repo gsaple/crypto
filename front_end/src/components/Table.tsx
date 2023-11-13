@@ -8,7 +8,7 @@ interface TableProps {
 
 const Table: FC<TableProps> = ({ cryptoData }) => {
   return (
-    <div className="py-10">
+    <div className="pb-10 pt-4">
       <DataTable columns={columns} data={cryptoData} />
     </div>
   );

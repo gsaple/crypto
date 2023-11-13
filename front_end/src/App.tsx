@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div className="mt-10 flex items-center justify-center whitespace-nowrap min-w-max">
       {data ? (
         <div>
           <Header
