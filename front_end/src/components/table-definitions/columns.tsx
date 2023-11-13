@@ -28,7 +28,7 @@ export const columns: ColumnDef<Crypto>[] = [
         <div className="flex items-center">
           <img
             className="mr-2 w-5 h-5"
-            src={`/src/assets/coin-icons/${coin.symbol}.webp`}
+            src={`/coin-icons/${coin.symbol}.webp`}
             alt={`${coin.name} (${coin.symbol})`}
           />
           <span className="font-bold mr-2">{coin.name}</span>
